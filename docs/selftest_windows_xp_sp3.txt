@@ -1,0 +1,74 @@
+==================================================
+ExamTimer 1.0.0 selftest
+==================================================
+[environment]
+  windows 5.1 build 2600  Service Pack 3
+  screen 1024x768, 16 bits, 1 monitors
+  processors 4
+  memory 2047 MB total, 1756 MB free
+[timer formatting]
+  [PASS] 0 ms -> 00:00:00.0
+  [PASS] 1500 ms -> 00:00:01.5
+  [PASS] 3661500 ms -> 01:01:01.5
+  [PASS] 3600000 ms -> 01:00:00
+  [PASS] 12345 ms -> 00:00:12.34
+  [PASS] timer measures ~220ms of real time
+  [PASS] paused timer does not advance
+  [PASS] resumed timer advances again
+[jpeg encoder]
+  [PASS] jpeg-encoder: PASS (64x48 test frame = 1933 bytes)
+[avi writer]
+  [PASS] reference frame encodes
+  [PASS] avi_open succeeds
+  [PASS] avi file exists
+  [PASS] RIFF/AVI fourcc
+  [PASS] RIFF size field matches file size
+  [PASS] avih.dwTotalFrames == 10
+  [PASS] strh.dwLength == 10
+  [PASS] movi LIST found
+  [PASS] 10 JPEG frames inside the AVI
+  [PASS] idx1 index chunk present
+  [PASS] idx1 has one entry per frame
+[audio]
+  waveIn devices: 0
+      (no capture device - audio can still be tested with the synthetic source)
+  [info] synthetic source: init=0 start=0
+  [PASS] synthetic audio source produces PCM data
+  [info] synthetic format: 44100 Hz 2ch 16bit
+[file output]
+  [PASS] can write a file into the working directory
+[screen capture]
+  [PASS] BitBlt screen capture to BMP
+  [PASS] BMP header 320x240
+[overlay window]
+  [info] cfg.pos=1 off=(0,0) fixed=1
+  [PASS] overlay window created
+  [PASS] overlay has WS_EX_TOPMOST
+  [PASS] overlay is a tool window (no taskbar entry)
+  [PASS] overlay is layered (transparency)
+  [PASS] overlay is click-through by default
+  [PASS] overlay is visible
+  [PASS] overlay pinned to the top edge
+  [PASS] overlay has a sensible size
+  [PASS] overlay fits on screen horizontally
+  [info] overlay rect = (327,0)-(697,73)
+  [info] z-order index: overlay=0 rival=3 (smaller = higher)
+  [PASS] overlay stays above another topmost window
+  [info] WindowFromPoint(overlay centre) with click-through = 0x001D01D4, overlay = 0x000A022E
+  [PASS] clicks pass through the overlay (click-through on)
+  [info] WindowFromPoint(overlay centre) without click-through = 0x000A022E
+  [PASS] overlay receives clicks when click-through is off
+  [PASS] click-through restored
+  [info] z-order index: overlay=0 fullscreen-window=26
+  [PASS] overlay stays above a full-screen ordinary window
+  [PASS] click-through can be switched off
+  [PASS] click-through can be switched back on
+  [PASS] overlay hides
+  [PASS] overlay shows again
+  [PASS] overlay destroyed cleanly
+[layered window capture probe]
+  [info] layered windows visible in BitBlt capture: NO
+  [info] capture method does not include layered windows; the burned-in clock covers this case
+==================================================
+result: 44 passed, 0 failed
+==================================================
