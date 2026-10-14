@@ -1,6 +1,12 @@
 # 考核计时录屏器 ExamTimer 2.0.0
 
 > 项目主页 / 源码：https://github.com/dengmotong/examtimer
+>
+> 下载可执行文件：[Releases · v2.0.0](https://github.com/dengmotong/examtimer/releases/tag/v2.0.0)
+> — 单文件 `ExamTimer.exe`，复制到考核机双击即可，无需安装。
+
+[![Release](https://img.shields.io/github/v/release/dengmotong/examtimer)](https://github.com/dengmotong/examtimer/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 一个面向**考核/考试考务**场景的绿色小工具：**一边录屏（可选录音），一边在屏幕最上方显示醒目的跳秒计时器**，
 并把同一时间**烧录进录像画面**，因此无论用什么方式回放，视频里都一定能看到操作所用的时间。
