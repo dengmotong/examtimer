@@ -1,0 +1,19 @@
+# build output
+/build/
+/ExamTimer.exe
+
+# runtime artifacts (recordings, logs, self-test outputs)
+/record/
+/test/out/
+*.avi
+*.log
+!docs/*.log
+
+# editor / OS noise
+*.o
+*.obj
+*.exe.bak
+Thumbs.db
+desktop.ini
+.DS_Store
+dist/示例/*.avi

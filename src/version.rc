@@ -1,0 +1,32 @@
+#pragma code_page(65001)
+#include <winver.h>
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     2,0,0,0
+PRODUCTVERSION  2,0,0,0
+FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+FILEFLAGS       0
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_APP
+FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName",      "dengmotong"
+            VALUE "FileDescription",  "考核计时录屏器 ExamTimer — 屏幕录制 + 屏幕最上方置顶跳秒计时器，并把时间烧录进录像"
+            VALUE "FileVersion",      "2.0.0.0"
+            VALUE "InternalName",     "ExamTimer"
+            VALUE "LegalCopyright",   "Copyright (C) 2026 dengmotong  (MIT License)"
+            VALUE "OriginalFilename", "ExamTimer.exe"
+            VALUE "ProductName",      "考核计时录屏器 (ExamTimer)"
+            VALUE "ProductVersion",   "2.0.0.0"
+            VALUE "Comments",         "兼容 Windows XP SP3 / 7 / 8 / 10 / 11。支持录音、自动分卷、中文路径。项目主页：https://github.com/dengmotong/examtimer"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
