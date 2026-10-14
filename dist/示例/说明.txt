@@ -1,0 +1,9 @@
+这里的示例录像没有放进 git 仓库（体积原因），它们只是用来说明输出格式：
+
+  示例录像_含计时_1024x768.avi   1024x768 / 5fps / MJPG，画面顶部带烧录的计时器
+  示例录像_含音频_中文目录.avi   双流 AVI（MJPG 视频 + PCM 44100Hz 立体声）
+  示例录像_右上角.avi            计时器位于右上角
+
+自己录一段即可：
+  ExamTimer.exe --run-seconds 10 --fps 5 --out demo.avi --no-tray
+然后用任意播放器打开 demo.avi。
